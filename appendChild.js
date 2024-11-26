@@ -11,6 +11,6 @@ lista.appendChild(novoItem);
 
 const banana = document.createElement('li')
 
-banana.innerText = ('Anderson')
+banana.innerText = 'Anderson'
 
 lista.appendChild(banana)
