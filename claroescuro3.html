@@ -19,17 +19,23 @@
 </head>
 <body>
     
-<button id="botaoAlternar" onclick="
-    document.body.classList.toggle('dark');
-    document.body.classList.toggle('light');
-    ">Alternar Tema</button>
+<button onclick="alterna()">Alternar Tema</button>
 
 
 <p>Olá eu sou um texto na pagina <br>
     esta pagina tem um botao de alternar o tema entre claro ou escuro
 </p>
 
-    
+   <script>
+
+    function alterna() {
+
+        document.body.classList.toggle('dark');
+        document.body.classList.toggle('light');
+
+    }
+
+   </script> 
 
 
 </body>
