@@ -2,14 +2,14 @@
 const caixa = document.getElementById("caixa");
 const botao = document.getElementById("botao");
 
-// Adiciona um evento de clique no botão
+// Adiciona um evento de mouseover no botão
 botao.addEventListener("mouseover", () => {
-    // Verifica se a caixa tem a classe "visivel"
-    if (caixa.classList.contains("visivel")) {
-        // Troca a classe para "oculto"
-        caixa.classList.replace("visivel", "oculto");
-    } else {
-        // Troca a classe para "visivel"
-        caixa.classList.replace("oculto", "visivel");
-    }
+    // Adiciona a classe "visivel" para exibir a caixa
+    caixa.classList.add("visivel");
+});
+
+// Adiciona um evento de mouseout para esconder o texto ao remover o mouse
+botao.addEventListener("mouseout", () => {
+    // Remove a classe "visivel" para ocultar a caixa
+    caixa.classList.remove("visivel");
 });
